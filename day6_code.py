@@ -1,4 +1,3 @@
-
 def read_file(filename):
     with open (filename) as f:
         return list(f.read())
@@ -27,26 +26,3 @@ def run_puzzle():
     return
 
 run_puzzle()
-
-
-
-# with open('day6.txt') as f:
-#     input_list = list(f.read())
-#     check_list = []
-
-#     for i, char in enumerate(input_list):
-#         if i < 14:
-#             check_list.append(char)
-#         else:
-#              #  check  for dupes
-#             if(len(set(check_list)) <  len(check_list)):
-#                 check_list.pop(0)
-#                 check_list.append(char)
-#             else:
-#                 break
-
-# print("The starting position is ", i )
-# #1658
-# #2260
-
-
