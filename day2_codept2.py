@@ -1,17 +1,13 @@
 
 with open('day2.txt') as f:
-    #xlose ydraw z win
 
-    
     score = 0
-
     for line in f:
         test = line.split()
         opponent = test[0]
         mine = test[1]
-        # points for selection
+
         if mine == 'X':
-            #rock
             if opponent == 'A':
                 score+=3
             elif opponent == 'B':

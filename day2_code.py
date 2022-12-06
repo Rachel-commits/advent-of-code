@@ -7,7 +7,7 @@ with open('day2.txt') as f:
         test = line.split()
         opponent = test[0]
         mine = test[1]
-        # points for selection
+
         if mine == 'X':
             score+=1
             if opponent == 'A':

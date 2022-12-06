@@ -1,8 +1,3 @@
-from pdb import line_prefix
-
-
-print("hello")
-
 with open('day1.txt') as f:
     
     calories = 0
