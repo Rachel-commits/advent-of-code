@@ -96,11 +96,5 @@ with open('day9.txt') as f:
         length = int(line[1])
         hpos, tail_visits = move_head_and_tail(hpos,tail_visits,direction,length)
         
-        # print(i,line, len(set(tail_visits)), tpos)
-        # print('xxxxxxxxxxxxxx')
-        # print(hpos)
-        # print(tpos)
-        # print(tail_visits)
-        # print(len(set(tail_visits)))
 
 print("The number of positions is ", len(set(tail_visits)))

@@ -65,4 +65,3 @@ print("The total signal strength is ", total_signal_strength)
 create_execution_dict('day10.txt')
 draw_list = get_pixels()
 print(generate_output(draw_list))
-
