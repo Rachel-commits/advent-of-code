@@ -3,7 +3,6 @@ Advent of Code 2022
 Day 1: Calorie Counting
 Calculating the elves with the most calories
 https://adventofcode.com/2022/day/1
-
 """
 
 def process_file(filename):
