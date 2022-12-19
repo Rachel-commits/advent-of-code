@@ -11,7 +11,7 @@ def process_file(filename):
     Loops through input file and creates a
     dictionary with the total calories for each elf
     """
-    with open(filename, encoding="utf8") as file:
+    with open(filename, encoding = 'utf8') as file:
 
         calories = 0
         elf = 1
