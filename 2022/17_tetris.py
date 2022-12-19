@@ -153,7 +153,7 @@ def reset_floor(chamber, floor_height, master_floor_height):
         chamber = [(coord[0], coord[1]-new_floor) for coord in chamber]
         floor_height -=new_floor
         master_floor_height += new_floor
- 
+
     return master_floor_height, floor_height, chamber
 
 def pattern_repeat(state_dict):
