@@ -1,7 +1,16 @@
-'''Day 1: Calorie Counting - Calculating the elves with the most calories'''
+"""
+Advent of Code 2022
+Day 1: Calorie Counting
+Calculating the elves with the most calories
+https://adventofcode.com/2022/day/1
+
+"""
+
 def process_file(filename):
-    '''Loops through input file and creates a
-    dictionary with the total calories for each elf'''
+    """
+    Loops through input file and creates a
+    dictionary with the total calories for each elf
+    """
     with open(filename, encoding="utf8") as file:
 
         calories = 0
@@ -19,7 +28,9 @@ def process_file(filename):
     return elf_dict
 
 def get_total_calories(filename, num_of_elves):
-    '''calaulate the total calories for the top n elves'''
+    """
+    calculate the total calories for the top n elves
+    """
     total_calories = 0
     elf_dict = process_file(filename)
     highest_elf = sorted(elf_dict, key=elf_dict.get, reverse=True)[:num_of_elves]
@@ -30,7 +41,7 @@ def get_total_calories(filename, num_of_elves):
     print ("The total number calories carried by the top "
     , num_of_elves, " elf is ", total_calories)
 
-#Part 1
-get_total_calories(r'data\day1.txt',1)
+# Part 1
+get_total_calories(r'data\day1.txt', 1)
 # Part2
-get_total_calories(r'data\day1.txt',3)
+get_total_calories(r'data\day1.txt', 3)
