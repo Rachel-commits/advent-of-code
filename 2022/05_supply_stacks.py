@@ -1,6 +1,6 @@
 """
 Advent of Code 2022
-Day 2: Supply Stacks
+Day 5: Supply Stacks
 Calculate the final stack positions accoring to
 the input file
 https://adventofcode.com/2022/day/5
