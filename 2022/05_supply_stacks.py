@@ -52,11 +52,10 @@ def processing(part):
     with open(r'data\day5.txt', encoding = 'utf8') as file:
         crate_input = []
         row = 1
-        instruction_input = False
         answer =[]
 
         for line in file:
-            if '[' in line and instruction_input is False:
+            if '[' in line:
                 crate_input = generate_input(line,crate_input, row)
 
             elif 'move' in line:
