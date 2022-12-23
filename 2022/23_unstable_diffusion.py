@@ -3,7 +3,7 @@ Advent of Code 2022
 Day 23: Unstable Diffusion
 Calculate the number of empty squares after
 10 rounds and the first round that no elf can move.
-https://adventofcode.com/2022/day/22
+https://adventofcode.com/2022/day/23
 """
 from itertools import chain
 from datetime import datetime
