@@ -1,6 +1,6 @@
 """
 Advent of Code 2022
-Day 6: Supply Stacks
+Day 6: Tuning Trouble
 Calculate the number of characters processed
 the input file
 https://adventofcode.com/2022/day/6
@@ -10,7 +10,7 @@ def read_file(filename):
     """
     Read in file
     """
-    with open (filename, encoding='UTF8') as file:
+    with open (filename, encoding = 'UTF8') as file:
         return list(file.read())
 
 def get_start_position(input_list, num_chars):
