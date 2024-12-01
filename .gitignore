@@ -1,2 +1,8 @@
-2022/.vscode/settings.json
-.vscode/settings.json
+
+.vscode/*.json
+.vscode/launch.json
+2021/
+2022/data
+2022/.vscode/*.json
+2023/
+2024/data

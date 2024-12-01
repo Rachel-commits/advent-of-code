@@ -1,7 +1,7 @@
 import numpy as np
 
 def read_in_array(filename):
-    with open('day12.txt') as f:
+    with open('data\day12.txt') as f:
         ls = []
         for line in f:
             ls.append(list(line.strip()))
