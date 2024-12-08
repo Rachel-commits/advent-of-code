@@ -115,11 +115,9 @@ def solve_puzzle(grid:list, is_part2:bool) -> int:
 def main() -> None:
     grid = get_input('2024/data/day8.txt')
 
-    # part1_result = solve_part1(grid)
-    # part2_result = solve_part2(grid)
     part1_result = solve_puzzle(grid, False)
     part2_result = solve_puzzle(grid, True)
-    # # 259 927
+
     print(f"The answer to part 1 is: {part1_result}")
     print(f"The answer to part 2 is: {part2_result}")
 
