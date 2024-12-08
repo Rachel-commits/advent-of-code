@@ -7,23 +7,23 @@ Part 2: <Part 2 Description>
 https://adventofcode.com/2024/day/X
 """
 
-def get_input() -> list:
+def get_input(filename) -> list:
 
     data =[]
     with open(filename, 'r') as file:
         for line in file:
     return data
 
-def solve_part1() -> int:
+def solve_part1(data) -> int:
     result = 0
     return result
 
-def solve_part2() -> int:
+def solve_part2(data) -> int:
     result = 0
     return result
 
 def main() -> None:
-    data = get_input('2024/data/dayX.txt')
+    data = get_input('2024/data/exampleX.txt')
 
     part1_result = solve_part1(data)
     part2_result = solve_part2(data)
