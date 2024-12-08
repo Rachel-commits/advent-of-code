@@ -1,10 +1,25 @@
 """
 Advent of Code 2024
 Day 2: Red-Nosed Reports 
-Part 1: <Part 1 Description>
-Part 2: <Part 2 Description>
+Part 1:
 
-https://adventofcode.com/2024/day/X
+The engineers are trying to figure out which reports are safe.
+The Red-Nosed reactor safety systems can only tolerate levels
+that are either gradually increasing or gradually decreasing.
+So, a report only counts as safe if both of the following are true:
+
+* The levels are either all increasing or all decreasing.
+* Any two adjacent levels differ by at least one and at most three.
+
+Part 2:
+The Problem Dampener is a reactor-mounted module that lets the reactor
+safety systems tolerate a single bad level in what would otherwise be
+a safe report. It's like the bad level never happened!
+
+Now, the same rules apply as before, except if removing a single level
+from an unsafe report would make it safe, the report instead counts as safe.
+
+https://adventofcode.com/2024/day/2
 """
 
 def get_input(filename) -> list:
@@ -17,6 +32,7 @@ def get_input(filename) -> list:
     return report_list
 
 def is_safe(report):
+
     safe = True
     prev_level = 0
     max_diff = 3
@@ -36,6 +52,7 @@ def is_safe(report):
             if diff > max_diff or diff < min_diff:
                 safe = False
                 break
+
     return safe, idx
 
 
@@ -76,6 +93,7 @@ def solve_part2(data) -> int:
 
 
 def main() -> None:
+    
     report_list = get_input('2024/data/day2.txt')
     report_count = solve_part1(report_list)
     report_count_amended = solve_part2(report_list)

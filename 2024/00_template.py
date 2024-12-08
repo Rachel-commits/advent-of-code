@@ -12,6 +12,7 @@ def get_input(filename) -> list:
     data =[]
     with open(filename, 'r') as file:
         for line in file:
+            data.append(list(line.strip()))
     return data
 
 def solve_part1(data) -> int:

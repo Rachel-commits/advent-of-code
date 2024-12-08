@@ -22,7 +22,7 @@ The concatenation operator (||) combines the digits from its left and
 right inputs into a single number. For example, 12 || 345 would become
 12345. All operators are still evaluated left-to-right.
 
-https://adventofcode.com/2024/day/X
+https://adventofcode.com/2024/day/7
 """
 import itertools
 
